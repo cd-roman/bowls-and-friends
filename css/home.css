@@ -2,15 +2,48 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 48px;
+  margin: 0px;
+  padding: 48px 0px 0px;
+  width: 100%;
 }
 .hero p {
   margin-top: 0px;
   margin-bottom: 24px;
 }
+@media screen and (max-width: 1000px) {
+  .hero {
+    padding-top: 24px;
+  }
+  .hero p {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .hero {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
 
 .hero-content {
   width: 40%;
+}
+@media screen and (max-width: 600px) {
+  .hero-content {
+    width: 100%;
+  }
+  .hero-content h1 {
+    text-align: center;
+  }
+  .hero-content p {
+    text-align: center;
+  }
+  .hero-content button {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .hero-image {
@@ -20,6 +53,13 @@
   background-color: darkgrey;
   border-radius: 12px;
   border: none;
+  margin: 0;
+  padding: 0;
+}
+@media screen and (max-width: 600px) {
+  .hero-image {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=home.css.map */

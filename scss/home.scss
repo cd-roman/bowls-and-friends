@@ -2,16 +2,50 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 48px;
+    margin: 0px;
+    padding: 48px 0px 0px;
+    width: 100%;
 
     p {
         margin-top: 0px;
         margin-bottom: 24px;
     }
+
+    @media screen and (max-width: 1000px){
+        padding-top: 24px;
+
+        p {
+            font-size: 16px;
+        }
+    }
+
+    @media screen and (max-width: 600px){
+        flex-direction: column-reverse;
+        align-items: center;
+    }
 }
 
 .hero-content {
     width: 40%;
+
+    @media screen and (max-width: 600px){
+        width: 100%;
+
+        h1 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        button {
+            display: flex;
+            justify-content: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
 }
 
 .hero-image {
@@ -21,4 +55,10 @@
     background-color: darkgrey;
     border-radius: 12px;
     border: none;
+    margin: 0;
+    padding: 0;
+
+    @media screen and (max-width: 600px){
+        width: 100%;
+    }
 }

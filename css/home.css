@@ -1,0 +1,25 @@
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 48px;
+}
+.hero p {
+  margin-top: 0px;
+  margin-bottom: 24px;
+}
+
+.hero-content {
+  width: 40%;
+}
+
+.hero-image {
+  width: 50%;
+  height: 500px;
+  object-fit: cover;
+  background-color: darkgrey;
+  border-radius: 12px;
+  border: none;
+}
+
+/*# sourceMappingURL=home.css.map */

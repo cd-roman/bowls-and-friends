@@ -1,0 +1,87 @@
+html {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Inter, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 500;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+button {
+    background-color: #29831B;
+    border-radius: 8px;
+    padding: 8px 40px;
+    border: none;
+    color: white;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    align-items: center;
+}
+
+.logo-container img {
+    max-width: 100%;
+    height: auto;
+
+    @media screen and (max-width: 1300px) {
+        .logo-container img {
+            max-width: 170px;
+        }
+    }
+}
+
+.nav-link {
+    margin: 0px 20px;
+    text-decoration: none;
+    color: black;
+
+    &:hover a {
+        color: #29831B;
+    }
+}
+
+.active-link a {
+    color: #29831B;
+    text-decoration: underline;
+}
+
+.reservation-container {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.reservation-phone-container {
+    display: flex;
+    margin-top: 8px;
+    font-weight: 600;
+    align-items: end;
+}
+
+#phone-icon {
+    margin-right: 8px;
+    transform: translateY(4px);
+}

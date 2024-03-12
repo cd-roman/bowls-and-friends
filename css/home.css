@@ -6,10 +6,6 @@
   padding: 48px 0px 0px;
   width: 100%;
 }
-.hero p {
-  margin-top: 0px;
-  margin-bottom: 24px;
-}
 @media screen and (max-width: 1000px) {
   .hero {
     padding-top: 24px;
@@ -20,13 +16,24 @@
 }
 @media screen and (max-width: 600px) {
   .hero {
+    padding-top: 16px;
     flex-direction: column-reverse;
     align-items: center;
   }
 }
 
 .hero-content {
-  width: 40%;
+  width: 30%;
+}
+@media screen and (max-width: 1780px) {
+  .hero-content {
+    width: 35%;
+  }
+}
+@media screen and (max-width: 1500px) {
+  .hero-content {
+    width: 40%;
+  }
 }
 @media screen and (max-width: 600px) {
   .hero-content {

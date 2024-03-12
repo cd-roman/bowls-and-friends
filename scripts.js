@@ -26,3 +26,19 @@ function showImageOverlay(imageSrc) {
     });
   });
   
+
+  const body = document.body;
+  const mobileMenu = document.getElementById('mobileMenu');
+  const openMenuBtn = document.getElementById('openMenu');
+  const closeMenuBtn = document.getElementById('closeMenu');
+  
+  openMenuBtn.addEventListener('click', function() {
+      mobileMenu.style.right = '0';
+      body.style.overflow = 'hidden'; // Prevent scrolling
+  });
+  
+  closeMenuBtn.addEventListener('click', function() {
+      mobileMenu.style.right = '-100%';
+      body.style.overflow = ''; // Re-enable scrolling
+  });
+  

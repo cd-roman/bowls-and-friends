@@ -14,11 +14,13 @@ body {
 h1 {
     font-size: 48px;
     font-weight: 500;
-    margin-top: 24px;
-    margin-bottom: 24px;
+    margin-top: 32px;
+    margin-bottom: 32px;
 
     @media screen and (max-width: 1000px) {
         font-size: 40px;
+        margin-top: 24px;
+        margin-bottom: 24px;
     }
 
     @media screen and (max-width: 768px) {
@@ -36,6 +38,15 @@ a {
     color: black;
 }
 
+p {
+    margin-top: 0px;
+    margin-bottom: 32px;
+
+    @media screen {
+        margin-bottom: 24px;
+    }
+}
+
 button {
     background-color: #29831B;
     border-radius: 8px;
@@ -44,7 +55,7 @@ button {
     color: white;
 }
 
-.container {
+.main-container {
     width: 80%;
     margin: 0 auto;
 
@@ -58,7 +69,14 @@ button {
     justify-content: space-between;
     margin-top: 60px;
     margin-bottom: 60px;
+    padding: 0px;
     align-items: center;
+
+    @media screen and (max-width: 800px) {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        
+    }
 }
 
 .logo-container img {
@@ -75,6 +93,8 @@ button {
 }
 
 .nav-links {
+    display: flex;
+
     @media screen and (max-width: 768px) {
         display: none;
     }
@@ -139,10 +159,84 @@ button {
     }
 }
 
-.mobile-menu-container {
+.mobile-menu-icon-container {
     display: none;
 
     @media screen and (max-width: 768px) {
         display: block;
     }
+}
+
+.mobile-menu {
+    position: fixed;
+    right: -100%; /* Start off-screen */
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    background: #E0ECE0;
+    transition: right 0.3s ease;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+}
+
+.close-mobile-menu {
+    align-self: flex-end;
+    font-size: 30px;
+    border: none;
+    background: none;
+    padding: 0px;
+    margin: 36px 6% 0px 0px;
+    color: black;
+}
+
+.open-mobile-menu {
+    font-size: 20px;
+    cursor: pointer;
+    left: 20px;
+    top: 20px;
+    z-index: 1100;
+    border: none;
+    border-radius: 8px;
+    padding: 0px;
+    color: white;
+}
+
+.mobile-menu-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 28px;
+}
+
+.mobile-nav-link {
+    font-size: 20px;
+    margin-top: 40px;
+    text-decoration: underline;
+}
+
+.mobile-social-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 140px;
+}
+
+.mobile-social-title {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.mobile-social-icons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+}
+
+.mobile-social-icon {
+    width: 32px;
+    height: auto;
+    margin: 0px 16px;
+    fill: black;
 }

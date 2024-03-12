@@ -257,12 +257,21 @@ button {
 .footer-content {
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
     padding: 80px 0px;
     width: 80%;
     margin: 0 auto;
 
     h3 {
         color: white;
+        margin: 0px;
+        padding: 0px;
+        line-height: 1;
+        padding: 10px 0px;
+
+        @media screen and (max-width: 768px) {
+            margin-top: 64px;
+        }
     }
 
     @media screen and (max-width: 1000px) {
@@ -270,8 +279,44 @@ button {
         width: 90%;
     }
 
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 768px) {
         padding-top: 32px;
         flex-direction: column;
     }
+}
+
+.footer-logo-container {
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width: 768px) {
+        margin-top: 32px;
+    }
+}
+
+.footer-item-container {
+    display: flex;
+    color: white;
+    max-width: 280px;
+    font-size: 16px;
+    font-weight: 400px;
+    margin-top: 20px;
+}
+
+.footer-icon {
+    margin-right: 16px;
+}
+
+.map-pin-icon {
+    padding-top: 6px;
+}
+
+.social-icons {
+    display: flex;
+    max-width: 280px;
+    margin-top: 20px;
+}
+
+.social-icon {
+    margin-right: 16px;
 }

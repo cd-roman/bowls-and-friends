@@ -39,12 +39,6 @@
   .hero-content {
     width: 100%;
   }
-  .hero-content h1 {
-    text-align: center;
-  }
-  .hero-content p {
-    text-align: center;
-  }
   .hero-content button {
     display: flex;
     justify-content: center;

@@ -1,14 +1,29 @@
-html {
-  padding: 0;
+* {
   margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+html {
   overflow-y: scroll;
 }
 
 body {
+  line-height: 1;
   font-family: Inter, sans-serif;
-  padding: 0;
-  margin: 0 auto 0 auto;
   max-width: 1920px;
+}
+
+ol, ul {
+  list-style: none;
 }
 
 h1 {
@@ -39,20 +54,26 @@ h3 {
   font-size: 24px;
   font-weight: 500;
 }
+@media screen and (max-width: 768px) {
+  h3 {
+    font-size: 20px;
+  }
+}
+
+.subhead {
+  line-height: 1.2;
+  margin-top: 0px;
+  margin-bottom: 32px;
+}
+@media screen and (max-width: 768px) {
+  .subhead {
+    margin-bottom: 24px;
+  }
+}
 
 a {
   text-decoration: none;
   color: black;
-}
-
-p {
-  margin-top: 0px;
-  margin-bottom: 32px;
-}
-@media screen {
-  p {
-    margin-bottom: 24px;
-  }
 }
 
 button {
@@ -73,7 +94,7 @@ button {
   }
 }
 
-.navbar {
+nav {
   display: flex;
   justify-content: space-between;
   margin-top: 60px;
@@ -82,7 +103,7 @@ button {
   align-items: center;
 }
 @media screen and (max-width: 800px) {
-  .navbar {
+  nav {
     margin-top: 40px;
     margin-bottom: 40px;
   }
@@ -105,6 +126,7 @@ button {
 
 .nav-links {
   display: flex;
+  height: 24px;
 }
 @media screen and (max-width: 768px) {
   .nav-links {
@@ -116,6 +138,7 @@ button {
   margin: 0px 20px;
   text-decoration: none;
   color: black;
+  align-self: flex-end;
 }
 .nav-link:hover a {
   color: #29831B;
@@ -258,13 +281,43 @@ button {
   margin: 0px 16px;
 }
 
-.footer {
+footer {
   background-color: #0E3606;
   position: absolute;
   left: 0;
   right: 0;
   width: 100%;
   margin-top: 120px;
+}
+
+.separate-logo-container {
+  display: none;
+  padding: 80px 0px 0px;
+  width: 80%;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1300px) {
+  .separate-logo-container {
+    display: flex;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .separate-logo-container {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .separate-logo-container {
+    padding-top: 64px;
+  }
+  .separate-logo-container img {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .separate-logo-container img {
+    width: 170px;
+  }
 }
 
 .footer-content {
@@ -287,32 +340,30 @@ button {
     margin-top: 64px;
   }
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1300px) {
   .footer-content {
     padding-top: 48px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .footer-content {
     width: 90%;
   }
 }
 @media screen and (max-width: 768px) {
   .footer-content {
-    padding-top: 32px;
+    padding-top: 0px;
     flex-direction: column;
   }
 }
 
-.footer-logo-container {
+.footer-logo-container a {
   display: flex;
   align-items: center;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1300px) {
   .footer-logo-container {
-    margin-top: 32px;
-  }
-}
-@media screen and (max-width: 1200px) {
-  .footer-logo-container img {
-    width: 200px;
-    height: auto;
+    display: none;
   }
 }
 
@@ -323,10 +374,15 @@ button {
   font-size: 16px;
   font-weight: 400px;
   margin-top: 20px;
+  line-height: 1.5;
 }
 @media screen and (max-width: 1300px) {
   .footer-item-container {
     max-width: 240px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer-item-container {
     font-size: 14px;
   }
 }
@@ -347,6 +403,12 @@ button {
 
 .social-icon {
   margin-right: 16px;
+}
+@media screen and (max-width: 500px) {
+  .social-icon {
+    width: 32px;
+    height: auto;
+  }
 }
 
 /*# sourceMappingURL=global.css.map */

@@ -1,14 +1,30 @@
-html {
-    padding: 0;
+* {
     margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+  }
+  
+  article, aside, details, figcaption, figure, 
+  footer, header, hgroup, menu, nav, section {
+    display: block;
+  }
+
+
+html {
 	overflow-y: scroll;
 }
-
+  
 body {
-    font-family: Inter, sans-serif;
-    padding: 0;
-    margin: 0 auto 0 auto;
-    max-width: 1920px;
+line-height: 1;
+font-family: Inter, sans-serif;
+max-width: 1920px;
+}
+  
+ol, ul {
+list-style: none;
 }
 
 h1 {
@@ -36,20 +52,25 @@ h2 {
 h3 {
     font-size: 24px;
     font-weight: 500;
+
+    @media screen and (max-width: 768px) {
+        font-size: 20px;
+    }
+}
+
+.subhead {
+    line-height: 1.2;
+    margin-top: 0px;
+    margin-bottom: 32px;
+
+    @media screen and (max-width: 768px) {
+        margin-bottom: 24px;
+    }
 }
 
 a {
     text-decoration: none;
     color: black;
-}
-
-p {
-    margin-top: 0px;
-    margin-bottom: 32px;
-
-    @media screen {
-        margin-bottom: 24px;
-    }
 }
 
 button {
@@ -69,7 +90,7 @@ button {
     }
 }
 
-.navbar {
+nav {
     display: flex;
     justify-content: space-between;
     margin-top: 60px;
@@ -99,6 +120,7 @@ button {
 
 .nav-links {
     display: flex;
+    height: 24px;
 
     @media screen and (max-width: 768px) {
         display: none;
@@ -109,6 +131,7 @@ button {
     margin: 0px 20px;
     text-decoration: none;
     color: black;
+    align-self: flex-end; // Add this line to align vertically to the bottom
 
     &:hover a {
         color: #29831B;
@@ -245,13 +268,42 @@ button {
     margin: 0px 16px;
 }
 
-.footer {
+footer {
     background-color: #0E3606;
     position: absolute;
     left: 0;
     right: 0;
     width: 100%;
     margin-top: 120px;
+}
+
+.separate-logo-container {
+    display: none;
+    padding: 80px 0px 0px;
+    width: 80%;
+    margin: 0 auto;
+
+    @media screen and (max-width: 1300px) {
+        display: flex;
+    }
+
+    @media screen and (max-width: 1000px) {
+        width: 90%;
+    }
+
+    @media screen and (max-width: 768px) {
+        padding-top: 64px;
+
+        img {
+            width: 200px;
+        }
+    }
+
+    @media screen and (max-width: 500px) {
+        img {
+            width: 170px;
+        }
+    }
 }
 
 .footer-content {
@@ -274,30 +326,28 @@ button {
         }
     }
 
-    @media screen and (max-width: 1000px) {
+    @media screen and (max-width: 1300px) {
         padding-top: 48px;
+    }
+
+    @media screen and (max-width: 1000px) {
         width: 90%;
     }
 
     @media screen and (max-width: 768px) {
-        padding-top: 32px;
+        padding-top: 0px;
         flex-direction: column;
     }
 }
 
 .footer-logo-container {
-    display: flex;
-    align-items: center;
-
-    @media screen and (max-width: 768px) {
-        margin-top: 32px;
+    a {
+        display: flex;
+        align-items: center;
     }
 
-    img {
-        @media screen and (max-width: 1200px) {
-            width: 200px;
-            height: auto;
-        }
+    @media screen and (max-width: 1300px) {
+        display: none;
     }
 }
 
@@ -308,10 +358,14 @@ button {
     font-size: 16px;
     font-weight: 400px;
     margin-top: 20px;
+    line-height: 1.5;
 
     @media screen and (max-width: 1300px) {
         max-width: 240px;
-        font-size: 14px;
+    }
+
+    @media screen and (max-width: 768px) {
+        font-size: 14px;        
     }
 }
 
@@ -331,4 +385,9 @@ button {
 
 .social-icon {
     margin-right: 16px;
+
+    @media screen and (max-width: 500px) {
+        width: 32px;
+        height: auto;        
+    }
 }

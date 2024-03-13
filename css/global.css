@@ -32,7 +32,7 @@ h1 {
   margin-top: 32px;
   margin-bottom: 32px;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1100px) {
   h1 {
     font-size: 40px;
     margin-top: 24px;
@@ -48,6 +48,11 @@ h1 {
 h2 {
   font-size: 36px;
   font-weight: 500;
+}
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 28px;
+  }
 }
 
 h3 {
@@ -76,7 +81,8 @@ a {
   color: black;
 }
 
-button {
+.primary-button {
+  display: inline-block;
   background-color: #29831B;
   border-radius: 8px;
   padding: 8px 40px;
@@ -88,7 +94,7 @@ button {
   width: 80%;
   margin: 0 auto;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
   .main-container {
     width: 90%;
   }
@@ -161,30 +167,30 @@ nav {
   text-decoration: underline;
 }
 
-.reservation-container {
+.nav-reservation-container {
   display: flex;
   flex-direction: column;
   align-items: end;
 }
 @media screen and (max-width: 1200px) {
-  .reservation-container {
+  .nav-reservation-container {
     font-size: 16px;
   }
 }
 @media screen and (max-width: 768px) {
-  .reservation-container {
+  .nav-reservation-container {
     display: none;
   }
 }
 
-.reservation-phone-container {
+.nav-reservation-phone-container {
   display: flex;
   margin-top: 8px;
   font-weight: 600;
   align-items: end;
 }
 @media screen and (max-width: 1000px) {
-  .reservation-phone-container {
+  .nav-reservation-phone-container {
     font-size: 14px;
   }
 }
@@ -301,7 +307,7 @@ footer {
     display: flex;
   }
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
   .separate-logo-container {
     width: 90%;
   }
@@ -345,7 +351,7 @@ footer {
     padding-top: 48px;
   }
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
   .footer-content {
     width: 90%;
   }

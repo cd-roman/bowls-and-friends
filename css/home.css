@@ -2,64 +2,106 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0px;
-  padding: 48px 0px 0px;
+  padding-top: 48px;
   width: 100%;
 }
 @media screen and (max-width: 1000px) {
   .hero {
     padding-top: 24px;
   }
-  .hero p {
-    font-size: 16px;
+}
+@media screen and (max-width: 850px) {
+  .hero h1 {
+    font-size: 36px;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .hero {
-    padding-top: 16px;
-    flex-direction: column-reverse;
+    padding-top: 0px;
+    flex-direction: column;
     align-items: center;
+    align-content: center;
   }
 }
 
 .hero-content {
   width: 30%;
+  margin-right: 120px;
 }
 @media screen and (max-width: 1780px) {
-  .hero-content {
-    width: 35%;
-  }
-}
-@media screen and (max-width: 1500px) {
   .hero-content {
     width: 40%;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1200px) {
   .hero-content {
-    width: 100%;
+    width: 50%;
+    margin-right: 100px;
   }
-  .hero-content button {
+}
+@media screen and (max-width: 900px) {
+  .hero-content {
+    width: 60%;
+    margin-right: 80px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero-content {
     display: flex;
     justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-right: 0px;
+    margin-bottom: 48px;
+    text-align: center;
+  }
+  .hero-content .subhead {
+    font-size: 16px;
   }
 }
 
-.hero-image {
-  width: 50%;
-  height: 500px;
-  object-fit: cover;
-  background-color: darkgrey;
+.hero-image img {
+  display: block;
+  max-height: 560px;
+  width: 100%;
+  height: auto;
   border-radius: 12px;
-  border: none;
-  margin: 0;
-  padding: 0;
 }
-@media screen and (max-width: 600px) {
-  .hero-image {
-    width: 100%;
+@media screen and (max-width: 1600px) {
+  .hero-image img {
+    max-height: 500px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero-image img {
+    max-height: none;
+  }
+}
+
+.reservation-container {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .reservation-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+    margin-top: 64px;
+  }
+}
+
+.reservation-phone-container {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .reservation-phone-container {
+    display: flex;
+    margin-top: 8px;
+    font-weight: 600;
+    align-items: end;
+    font-size: 16px;
   }
 }
 
@@ -68,6 +110,11 @@
   flex-direction: column;
   align-items: center;
   margin-top: 100px;
+}
+@media screen and (max-width: 768px) {
+  .photo-gallery-container {
+    margin-top: 64px;
+  }
 }
 
 .photo-gallery {
@@ -82,6 +129,7 @@
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 15px;
     grid-row-gap: 25px;
+    margin-top: 32px;
   }
 }
 @media screen and (max-width: 500px) {
@@ -93,7 +141,8 @@
 
 .photo-gallery-item img {
   width: 100%;
-  display: flex;
+  display: block;
+  border-radius: 12px;
   height: auto;
   align-items: center;
   position: relative;

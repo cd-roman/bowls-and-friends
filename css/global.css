@@ -309,6 +309,12 @@ button {
     margin-top: 32px;
   }
 }
+@media screen and (max-width: 1200px) {
+  .footer-logo-container img {
+    width: 200px;
+    height: auto;
+  }
+}
 
 .footer-item-container {
   display: flex;
@@ -317,6 +323,12 @@ button {
   font-size: 16px;
   font-weight: 400px;
   margin-top: 20px;
+}
+@media screen and (max-width: 1300px) {
+  .footer-item-container {
+    max-width: 240px;
+    font-size: 14px;
+  }
 }
 
 .footer-icon {

@@ -292,6 +292,13 @@ button {
     @media screen and (max-width: 768px) {
         margin-top: 32px;
     }
+
+    img {
+        @media screen and (max-width: 1200px) {
+            width: 200px;
+            height: auto;
+        }
+    }
 }
 
 .footer-item-container {
@@ -301,6 +308,11 @@ button {
     font-size: 16px;
     font-weight: 400px;
     margin-top: 20px;
+
+    @media screen and (max-width: 1300px) {
+        max-width: 240px;
+        font-size: 14px;
+    }
 }
 
 .footer-icon {

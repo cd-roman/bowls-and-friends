@@ -93,6 +93,7 @@ margin-bottom: 100px;
     width: 96px;
     height: auto;
     margin-left: 100px;
+    border-radius: 12px;
 
     @media screen and (max-width: 960px) {
         margin-left: 50px;
@@ -161,6 +162,10 @@ margin-bottom: 100px;
     height: auto;
     margin-left: auto;
     margin-right: auto;
+
+    img {
+        border-radius: 12px;
+    }
 
     @media screen and (max-width: 768px){
         max-width: 240px;

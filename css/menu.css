@@ -101,6 +101,7 @@
   width: 96px;
   height: auto;
   margin-left: 100px;
+  border-radius: 12px;
 }
 @media screen and (max-width: 960px) {
   .menu-item-image img {
@@ -173,6 +174,9 @@
   height: auto;
   margin-left: auto;
   margin-right: auto;
+}
+.overlay-item-image img {
+  border-radius: 12px;
 }
 @media screen and (max-width: 768px) {
   .overlay-item-image {

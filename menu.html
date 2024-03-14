@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="css/global.scss">
-    <link rel="stylesheet" href="css/menu.scss">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
@@ -68,19 +66,78 @@
 
         <div class="menu-container">
             <h1>Menu</h1>
-            <hr>
+            <hr class="menu-top-divider">
 
             <div class="accordion accordion-flush" id="accordionFlushExample">
+                
                 <div class="accordion-item">
-                  <h2 class="accordion-header">
+                    <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                      Accordion Item #1
+                        Starters
                     </button>
-                  </h2>
-                  <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
-                  </div>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        
+                        <div class="menu-item-container accordion-body">
+                            <div class="menu-item">
+                                <div class="menu-item-wrapper">
+                                    <div class="menu-item-title">
+                                        Set of bruschettas
+                                    </div>
+                                    <div class="menu-item-description">
+                                        A set of delicious bruschettas from our chef by the special recipe of their grandmother. Toasted baguette, fresh tomatoes, olives, cheese, and parsley.
+                                    </div>
+                                </div>
+                                <div class="menu-item-price">
+                                    $3.50
+                                </div>
+                            </div>
+                            <div class="menu-item-image">
+                                <img src="https://live.staticflickr.com/65535/53586220891_555a69c951_o.jpg" alt="">
+                            </div>
+                        </div>          
+                        
+                        <div class="menu-item-container accordion-body">
+                            <div class="menu-item">
+                                <div class="menu-item-wrapper">
+                                    <div class="menu-item-title">
+                                        Cheese plate
+                                    </div>
+                                    <div class="menu-item-description">
+                                        Six types of cheese from the local creamery and imported French cheese, in addition to exotic berries, walnut, candied fruit, and honey.
+                                    </div>
+                                </div>
+                                <div class="menu-item-price">
+                                    $5.70
+                                </div>
+                            </div>
+                            <div class="menu-item-image">
+                                <img src="https://live.staticflickr.com/65535/53586220891_555a69c951_o.jpg" alt="">
+                            </div>
+                        </div>    
+
+                        <div class="menu-item-container accordion-body">
+                            <div class="menu-item">
+                                <div class="menu-item-wrapper">
+                                    <div class="menu-item-title">
+                                        Tapas plate
+                                    </div>
+                                    <div class="menu-item-description">
+                                        Two pieces of baguette, crackers, almonds, walnut, grape, apple, cashews, raisins, cheese, and a surprise ingredient from our chef. A perfect healthy tapas.
+                                    </div>
+                                </div>
+                                <div class="menu-item-price">
+                                    $4.90
+                                </div>
+                            </div>
+                            <div class="menu-item-image">
+                                <img src="https://live.staticflickr.com/65535/53586220891_555a69c951_o.jpg" alt="">
+                            </div>
+                        </div>    
+
+                    </div>
                 </div>
+
                 <div class="accordion-item">
                   <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
@@ -91,6 +148,7 @@
                     <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
                   </div>
                 </div>
+
                 <div class="accordion-item">
                   <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
@@ -101,13 +159,38 @@
                     <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
                   </div>
                 </div>
-              </div>
+                
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                        Accordion Item #4
+                      </button>
+                    </h2>
+                    <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                        Accordion Item #5
+                      </button>
+                    </h2>
+                    <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                    </div>
+                </div>
+                
+                <hr class="menu-bottom-divider">
 
+              </div>
+              
         </div>
 
     </div>
     
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

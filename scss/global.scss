@@ -18,9 +18,11 @@ html {
 }
   
 body {
-line-height: 1;
-font-family: Inter, sans-serif;
-max-width: 1920px;
+    line-height: 1;
+    font-family: Inter, sans-serif;
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
 }
   
 ol, ul {
@@ -323,6 +325,7 @@ footer {
     padding: 80px 0px;
     width: 80%;
     margin: 0 auto;
+    max-width: 1536px;
 
     h3 {
         color: white;

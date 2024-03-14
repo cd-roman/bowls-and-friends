@@ -69,4 +69,35 @@ adjustText();
 window.addEventListener('resize', adjustText);  
 
   
-  
+document.addEventListener("DOMContentLoaded", function() {
+  const menuItems = document.querySelectorAll('.menu-item-container');
+
+  menuItems.forEach(item => {
+      item.addEventListener('click', function() {
+          // Populate overlay
+          document.querySelector('.overlay-item-title').textContent = item.querySelector('.menu-item-title').textContent;
+          document.querySelector('.overlay-item-description').textContent = item.querySelector('.menu-item-description').textContent;
+          document.querySelector('.overlay-item-price').textContent = item.querySelector('.menu-item-price').textContent;
+          
+          const imgSrc = item.querySelector('.menu-item-image img').src;
+          const overlayImage = document.querySelector('.overlay-item-image');
+          overlayImage.innerHTML = `<img src="${imgSrc}" alt="" style="width:100%;">`;
+
+          // Show overlay
+          document.getElementById('menuOverlay').style.display = 'block';
+      });
+  });
+
+  // Close the overlay when the cross icon is clicked
+  document.querySelector('.close').addEventListener('click', function() {
+      document.getElementById('menuOverlay').style.display = 'none';
+  });
+
+  document.getElementById('menuOverlay').addEventListener('click', function(event) {
+    // Check if the clicked element is the overlay itself, not its child elements
+    if (event.target === this) {
+        document.getElementById('menuOverlay').style.display = 'none';
+    }
+});
+});
+

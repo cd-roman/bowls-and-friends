@@ -81,6 +81,11 @@ a {
   color: black;
 }
 
+a[href^=tel], a[href^=sms] {
+  color: inherit;
+  text-decoration: none;
+}
+
 .primary-button {
   display: inline-block;
   background-color: #29831B;

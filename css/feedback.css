@@ -28,7 +28,7 @@
   margin: 80px auto;
   border-radius: 12px;
   box-shadow: 4px 4px 12px 0 rgba(0, 0, 0, 0.2);
-  padding: 64px 48px;
+  padding: 64px 56px;
   text-align: center;
 }
 
@@ -43,6 +43,11 @@ h2 {
 
 h3 {
   margin-top: 3rem;
+  margin-bottom: 0px;
+}
+
+.rating-block {
+  margin-top: 16px;
 }
 
 .rating {
@@ -62,6 +67,55 @@ h3 {
 
 .star.selected {
   color: #ffd700;
+}
+
+.rating-block-description {
+  margin-top: 16px;
+  color: #595959;
+  font-size: 14px;
+}
+
+textarea {
+  margin-top: 3rem;
+  border: 1px solid #BDBDBD;
+  border-radius: 8px;
+  width: 100%;
+  line-height: 1.2;
+  padding: 20px;
+}
+
+textarea::placeholder {
+  opacity: 1; /* Default state for placeholder */
+}
+
+textarea:focus::placeholder {
+  opacity: 0; /* Hide placeholder on focus */
+}
+
+h4 {
+  margin-top: 40px;
+  margin-bottom: 8px;
+}
+
+input {
+  margin-top: 20px;
+  border: 1px solid #BDBDBD;
+  border-radius: 8px;
+  width: 100%;
+  line-height: 1.2;
+  padding: 20px;
+}
+
+input::placeholder {
+  opacity: 1;
+}
+
+input:focus::placeholder {
+  opacity: 0; /* Hide placeholder on focus */
+}
+
+button {
+  margin-top: 40px;
 }
 
 footer {

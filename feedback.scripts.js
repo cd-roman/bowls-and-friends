@@ -26,3 +26,24 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+
+document.querySelectorAll('.rating-block').forEach((ratingBlock, blockIndex) => {
+    const stars = ratingBlock.querySelectorAll('.star');
+    // Choose the correct hidden input based on the index of the rating block
+    const hiddenInput = blockIndex === 0 ? document.getElementById('foodBeveragesRating') : document.getElementById('servicesRating');
+
+    stars.forEach((star, index) => {
+        star.addEventListener('click', () => {
+            hiddenInput.value = index + 1; // Update hidden input value to the selected rating
+        });
+    });
+});
+
+
+
+
+
+
+
+

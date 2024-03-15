@@ -1,0 +1,16 @@
+.main-container {
+    flex: none;
+}
+
+.feedback-container {
+    background-color: #E0ECE0;
+    height: 500px;
+    flex: 1;
+    width: 80%;
+    max-width: 1500px;
+    margin: 0 auto;
+
+    @media screen and (max-width: 1200px) {
+        width: 90%;        
+    }
+}

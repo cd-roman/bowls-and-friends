@@ -14,13 +14,17 @@
 
 
 html {
+    height: 100%;
 	overflow-y: scroll;
 }
   
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    height: 100%;
     line-height: 1;
     font-family: Inter, sans-serif;
-    max-width: 1920px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -94,7 +98,9 @@ a[href^="tel"], a[href^="sms"] {
 }
 
 .main-container {
+    flex: 1;
     width: 80%;
+    max-width: 1500px;
     margin: 0 auto;
 
     @media screen and (max-width: 1200px) {
@@ -140,13 +146,17 @@ nav {
 }
 
 .nav-link {
-    margin: 0px 20px;
+    margin: 0px 36px;
     text-decoration: none;
     color: black;
     align-self: flex-end; // Add this line to align vertically to the bottom
 
     &:hover a {
         color: #29831B;
+    }
+
+    @media screen and (max-width: 1500px) {
+        margin: 0px 20px;
     }
 
     @media screen and (max-width: 1200px) {
@@ -282,7 +292,6 @@ nav {
 
 footer {
     background-color: #0E3606;
-    position: absolute;
     left: 0;
     right: 0;
     width: 100%;
@@ -325,7 +334,7 @@ footer {
     padding: 80px 0px;
     width: 80%;
     margin: 0 auto;
-    max-width: 1536px;
+    max-width: 1500px;
 
     h3 {
         color: white;

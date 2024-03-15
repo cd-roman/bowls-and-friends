@@ -41,9 +41,37 @@ document.querySelectorAll('.rating-block').forEach((ratingBlock, blockIndex) => 
 });
 
 
+document.addEventListener('DOMContentLoaded', () => {
+    const form = document.querySelector('form');
+    form.addEventListener('submit', (event) => {
+        event.preventDefault(); // Prevent the actual form submission
+
+        const formData = new FormData(form);
+        for (let [key, value] of formData.entries()) {
+            console.log(`${key}: ${value}`);
+        }
+    });
+});
 
 
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('feedbackForm');
+    form.addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the default form submission behavior
 
+        // Show an alert message
+        alert("Your feedback has been submitted. Thank you!");
+
+        // Clear form fields
+        form.reset();
+
+        // Reset rating blocks (remove 'selected' class from stars)
+        const stars = document.querySelectorAll('.rating .star');
+        stars.forEach(star => {
+            star.classList.remove('selected', 'hovered');
+        });
+    });
+});
 
 
 

@@ -91,6 +91,15 @@
     margin-top: 64px;
   }
 }
+@media screen and (max-width: 600px) {
+  .reservation-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    margin-top: 64px;
+  }
+}
 
 .reservation-phone-container {
   display: none;
@@ -98,10 +107,9 @@
 @media screen and (max-width: 768px) {
   .reservation-phone-container {
     display: flex;
-    margin-top: 8px;
+    padding-top: 12px;
     font-weight: 600;
-    align-items: end;
-    font-size: 16px;
+    align-items: center;
   }
 }
 

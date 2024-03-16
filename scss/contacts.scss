@@ -31,10 +31,9 @@ h1 {
     }
 }
 
-
-
 .contacts-item-container {
     display: flex;
+    align-items: center;
     max-width: 280px;
     font-size: 16px;
     font-weight: 400px;
@@ -51,11 +50,9 @@ h1 {
 }
 
 .contacts-icon {
+    display: flex;
+    align-items: center;
     margin-right: 16px;
-}
-
-.contacts-map-pin-icon {
-    padding-top: 6px;
 }
 
 .contacts-social-media {

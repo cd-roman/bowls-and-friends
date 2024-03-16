@@ -15,9 +15,22 @@ h1 {
 }
 
 .contacts-content {
-  display: flex;
-  flex-direction: column;
+  width: 60%;
+  display: grid;
+  gap: 48px;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   margin-right: 80px;
+}
+@media screen and (max-width: 1450px) {
+  .contacts-content {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .contacts-content {
+    width: 100%;
+    margin-right: 0px;
+  }
 }
 
 .contacts-item-container {
@@ -47,14 +60,9 @@ h1 {
   padding-top: 6px;
 }
 
-.contacts-working-hours {
-  margin-top: 52px;
-}
-
 .contacts-social-media {
   display: flex;
   flex-direction: column;
-  margin-top: 52px;
 }
 
 .contacts-social-icons {
@@ -75,7 +83,7 @@ h1 {
 
 .contacts-image img {
   display: block;
-  max-height: 500px;
+  max-height: 560px;
   width: 100%;
   height: auto;
   border-radius: 12px;

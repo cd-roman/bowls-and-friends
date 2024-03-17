@@ -96,12 +96,13 @@ h3 {
 }
 
 textarea {
-    margin: 3rem 20px 0px;
+    margin: 3rem 0px 0px;
     border: 1px solid #BDBDBD;
     border-radius: 8px;
-    width: 100%;
     line-height: 1.2;
-    padding: 20px;
+    width: 90%;
+    padding: 20px 5%;
+    resize: vertical;
 
     @media screen and (max-width: 768px) {
         font-size: 16px;    
@@ -126,12 +127,13 @@ h4 {
 }
 
 input {
-    margin: 20px 20px 0px;
+    margin: 20px 0px 0px;
     border: 1px solid #BDBDBD;
     border-radius: 8px;
     width: 100%;
     line-height: 1.2;
-    padding: 20px;
+    width: 90%;
+    padding: 20px 5%;
 
     @media screen and (max-width: 768px) {
         font-size: 16px;    

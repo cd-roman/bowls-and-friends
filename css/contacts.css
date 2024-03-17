@@ -80,12 +80,18 @@ h1 {
   }
 }
 
-.contacts-image img {
-  display: block;
-  max-height: 560px;
-  width: 100%;
-  height: auto;
+.contacts-image {
+  display: flex;
+  max-width: 560px;
+  height: 100%;
+  width: auto;
   border-radius: 12px;
+  overflow: hidden;
+}
+.contacts-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 @media screen and (max-width: 1600px) {
   .contacts-image img {
@@ -93,8 +99,8 @@ h1 {
   }
 }
 @media screen and (max-width: 768px) {
-  .contacts-image img {
-    max-height: none;
+  .contacts-image {
+    max-width: none;
     margin-top: 40px;
   }
 }

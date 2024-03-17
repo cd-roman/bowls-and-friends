@@ -45,14 +45,15 @@ margin-bottom: 100px;
 }
 
 .menu-item-wrapper {
-    margin-right: 100px;
+    width: 100%;
+    padding-right: 3rem;
 
     @media screen and (max-width: 960px) {
-        margin-right: 50px;
+        padding-right: 2rem;
     }
 
     @media screen and (max-width: 600px) {
-        margin-right: 8px;
+        padding-right: 8px;
     }
 }
 
@@ -74,33 +75,27 @@ margin-bottom: 100px;
 }
 
 .menu-item-price {
-    margin-top: 13px;
+    padding-right: 3rem;
     font-weight: 500;
     font-style: italic;
-
-    @media screen and (max-width: 768px) {
-        margin-top: 24px;
-    }
-
-    @media screen and (max-width: 600px) {
-        margin-bottom: 0px;
-        padding-bottom: 0px;
+    
+    @media screen and (max-width: 960px) {
+        padding-right: 0;
+        padding-top: 12px;
     }
 }
 
-.menu-item-image img{
-    display: block;
+.menu-item-image {
+    display: flex;
     width: 96px;
     height: auto;
-    margin-left: 100px;
     border-radius: 12px;
+    overflow: hidden;
 
-    @media screen and (max-width: 960px) {
-        margin-left: 50px;
-    }
-
-    @media screen and (max-width: 600px) {
-        margin-left: 8px;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 }
 
@@ -156,14 +151,17 @@ margin-bottom: 100px;
 }
 
 .overlay-item-image {
-    display: block;
     max-width: 300px;
-    height: auto;
+
+    border-radius: 12px;
     margin-left: auto;
     margin-right: auto;
+    overflow: hidden;
 
     img {
-        border-radius: 12px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 
     @media screen and (max-width: 768px){

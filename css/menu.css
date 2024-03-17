@@ -133,7 +133,7 @@
   box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.25);
 }
 
-.close {
+.close-overlay {
   position: absolute;
   top: 40px;
   right: 40px;
@@ -141,7 +141,7 @@
   cursor: pointer;
 }
 @media screen and (max-width: 600px) {
-  .close {
+  .close-overlay {
     top: 20px;
     right: 20px;
     font-size: 18px;

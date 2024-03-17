@@ -49,7 +49,7 @@ menuItems.forEach(item => {
 });
 
 // Close the overlay when the cross icon is clicked
-document.querySelector('.close').addEventListener('click', function() {
+document.querySelector('.close-overlay').addEventListener('click', function() {
     document.getElementById('menuOverlay').style.display = 'none';
 });
 
@@ -58,5 +58,5 @@ document.getElementById('menuOverlay').addEventListener('click', function(event)
     if (event.target === this) {
         document.getElementById('menuOverlay').style.display = 'none';
     }
-});
+  });
 });

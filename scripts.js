@@ -1,28 +1,25 @@
-// Function to create the overlay and show the full-size image
+// Function to show the overlay with the full-size image
 function showImageOverlay(imageSrc) {
-  const overlay = document.createElement('div');
-  overlay.id = 'image-overlay';
-
-  const img = document.createElement('img');
+  const overlay = document.getElementById('image-overlay');
+  const img = document.getElementById('overlay-image');
   img.src = imageSrc;
 
-  overlay.appendChild(img);
+  // Toggle the overlay visibility by adding/removing the class
+  overlay.classList.add('overlay-open');
 
   // Remove overlay on click
   overlay.addEventListener('click', function() {
-    overlay.remove();
+      overlay.classList.remove('overlay-open');
   });
-
-  document.body.appendChild(overlay);
 }
-  
+
 // Get all images in the gallery
 const images = document.querySelectorAll('.gallery-image');
 
 // Add click event to each image
 images.forEach(image => {
   image.addEventListener('click', function() {
-    showImageOverlay(image.src);
+      showImageOverlay(image.src);
   });
 });
 
@@ -33,11 +30,11 @@ const openMenuBtn = document.getElementById('openMenu');
 const closeMenuBtn = document.getElementById('closeMenu');
 
 openMenuBtn.addEventListener('click', function() {
-    mobileMenu.style.right = '0';
-    body.style.overflow = 'hidden'; // Prevent scrolling
+  mobileMenu.classList.add('mobile-menu-open'); // Open the mobile menu
+  body.classList.add('no-scroll'); // Prevent body scrolling
 });
 
 closeMenuBtn.addEventListener('click', function() {
-    mobileMenu.style.right = '-100%';
-    body.style.overflow = ''; // Re-enable scrolling
+  mobileMenu.classList.remove('mobile-menu-open'); // Close the mobile menu
+  body.classList.remove('no-scroll'); // Re-enable body scrolling
 });

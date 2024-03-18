@@ -39,6 +39,12 @@ document.addEventListener('DOMContentLoaded', function() {
     form.addEventListener('submit', function(event) {
         event.preventDefault(); // Prevent the default form submission behavior
 
+        const formData = new FormData(form);
+
+        for (const [name, value] of formData.entries()) {
+            console.log(`${name}: ${value}`);
+        }
+
         // Show an alert message
         alert("Your feedback has been submitted. \nThank you!");
 

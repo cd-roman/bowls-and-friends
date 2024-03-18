@@ -43,7 +43,7 @@
 }
 @media screen and (max-width: 600px) {
   .feedback-form-container {
-    width: 80%;
+    width: 90%;
     padding: 28px;
   }
 }
@@ -106,8 +106,8 @@ textarea {
   border: 1px solid #BDBDBD;
   border-radius: 8px;
   line-height: 1.2;
-  width: 90%;
-  padding: 20px 5%;
+  width: 100%;
+  padding: 20px;
   resize: vertical;
 }
 @media screen and (max-width: 768px) {
@@ -140,8 +140,8 @@ input {
   border-radius: 8px;
   width: 100%;
   line-height: 1.2;
-  width: 90%;
-  padding: 20px 5%;
+  width: 100%;
+  padding: 20px;
 }
 @media screen and (max-width: 768px) {
   input {

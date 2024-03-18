@@ -23,18 +23,20 @@ images.forEach(image => {
   });
 });
 
-
 const body = document.body;
 const mobileMenu = document.getElementById('mobileMenu');
-const openMenuBtn = document.getElementById('openMenu');
-const closeMenuBtn = document.getElementById('closeMenu');
 
-openMenuBtn.addEventListener('click', function() {
-  mobileMenu.classList.add('mobile-menu-open'); // Open the mobile menu
-  body.classList.add('no-scroll'); // Prevent body scrolling
-});
+// Function to open the mobile menu
+function openMenu() {
+  mobileMenu.classList.add('mobile-menu-open'); // Slide in from the right
+  body.classList.add('no-scroll');
+}
 
-closeMenuBtn.addEventListener('click', function() {
-  mobileMenu.classList.remove('mobile-menu-open'); // Close the mobile menu
-  body.classList.remove('no-scroll'); // Re-enable body scrolling
-});
+// Function to close the mobile menu
+function closeMenu() {
+  mobileMenu.classList.remove('mobile-menu-open'); // Revert to initial state to slide out to the right
+  body.classList.remove('no-scroll');
+}
+
+document.querySelector('.open-mobile-menu-icon').addEventListener('click', openMenu);
+document.querySelector('.close-mobile-menu-icon').addEventListener('click', closeMenu);

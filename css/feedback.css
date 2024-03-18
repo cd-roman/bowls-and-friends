@@ -162,7 +162,7 @@ input:focus::placeholder {
   opacity: 0; /* Hide placeholder on focus */
 }
 
-button {
+#form-submit-btn {
   margin-top: 40px;
 }
 

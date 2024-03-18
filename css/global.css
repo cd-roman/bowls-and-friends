@@ -245,48 +245,44 @@ nav {
 
 .mobile-menu {
   position: fixed;
-  right: -100%; /* Start off-screen */
+  padding-top: 40px;
   top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  padding: 0px;
   background: #E0ECE0;
-  transition: right 0.3s ease;
   z-index: 1000;
   display: flex;
   flex-direction: column;
-  visibility: hidden; /* Start hidden */
-  opacity: 0; /* Start fully transparent */
+  transition: transform 0.3s ease;
+  transform: translateX(100%);
 }
 
 .mobile-menu-open {
-  right: 0 !important; /* Ensure the menu is visible */
-  visibility: visible;
-  opacity: 1;
-  transition-delay: 0s;
+  transform: translateX(0); /* Slide in */
+  width: 100%;
 }
 
 .no-scroll {
   overflow: hidden !important; /* Prevent scrolling when mobile menu is opened */
 }
 
-.close-mobile-menu {
+.close-mobile-menu-icon {
   align-self: flex-end;
+  padding-right: 6%;
   font-size: 30px;
   border: none;
   background: none;
-  padding: 0px;
-  margin: 36px 6% 0px 0px;
   color: black;
   cursor: pointer;
 }
 @media screen and (max-width: 600px) {
-  .close-mobile-menu {
+  .close-mobile-menu-icon {
     font-size: 24px;
   }
 }
 
-.open-mobile-menu {
+.open-mobile-menu-icon {
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -295,7 +291,7 @@ nav {
   z-index: 1100;
 }
 @media screen and (max-width: 600px) {
-  .open-mobile-menu {
+  .open-mobile-menu-icon {
     width: 24px;
     height: auto;
   }

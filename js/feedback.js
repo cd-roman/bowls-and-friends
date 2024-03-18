@@ -1,22 +1,30 @@
 document.addEventListener('DOMContentLoaded', function() {
-    document.querySelectorAll('.rating-block').forEach(ratingBlock => {
+    document.querySelectorAll('.rating-block').forEach((ratingBlock, blockIndex) => {
         const stars = ratingBlock.querySelectorAll('.star');
+        const hiddenInput = blockIndex === 0 ? document.getElementById('foodBeveragesRating') : document.getElementById('servicesRating');
 
         stars.forEach((star, index) => {
+            // Mouseenter event for hover effect
             star.addEventListener('mouseenter', () => {
                 stars.forEach((s, idx) => {
                     s.classList.toggle('hovered', idx <= index);
                 });
             });
 
+            // Click event for setting selected state and updating hidden input
             star.addEventListener('click', () => {
+                // Remove hovered class and set selected class
                 stars.forEach((s, idx) => {
                     s.classList.remove('hovered');
                     s.classList.toggle('selected', idx <= index);
                 });
+
+                // Update hidden input value to the selected rating
+                hiddenInput.value = index + 1;
             });
         });
 
+        // Mouseleave event to clear hover effect
         ratingBlock.addEventListener('mouseleave', () => {
             stars.forEach(star => {
                 if (!star.classList.contains('selected')) {
@@ -25,23 +33,8 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     });
-});
 
-
-document.querySelectorAll('.rating-block').forEach((ratingBlock, blockIndex) => {
-    const stars = ratingBlock.querySelectorAll('.star');
-    // Choose the correct hidden input based on the index of the rating block
-    const hiddenInput = blockIndex === 0 ? document.getElementById('foodBeveragesRating') : document.getElementById('servicesRating');
-
-    stars.forEach((star, index) => {
-        star.addEventListener('click', () => {
-            hiddenInput.value = index + 1; // Update hidden input value to the selected rating
-        });
-    });
-});
-
-
-document.addEventListener('DOMContentLoaded', function() {
+    // Form submission handling
     const form = document.getElementById('feedbackForm');
     form.addEventListener('submit', function(event) {
         event.preventDefault(); // Prevent the default form submission behavior

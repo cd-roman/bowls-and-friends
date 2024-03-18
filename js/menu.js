@@ -1,3 +1,4 @@
+document.addEventListener("DOMContentLoaded", function() {
 
 function adjustText() {
     document.querySelectorAll('.menu-item-description').forEach(function(element) {
@@ -20,31 +21,29 @@ function adjustText() {
     });
 }
   
-// Run the function on initial load and whenever the window is resized
-adjustText();
-window.addEventListener('resize', adjustText);  
-  
+  // Run the function on initial load and whenever the window is resized
+  adjustText();
+  window.addEventListener('resize', adjustText);  
     
-document.addEventListener("DOMContentLoaded", function() {
-const menuItems = document.querySelectorAll('.menu-item-container');
+  const menuItems = document.querySelectorAll('.menu-item-container');
 
-menuItems.forEach(item => {
+  menuItems.forEach(item => {
     item.addEventListener('click', function() {
-        // Populate overlay
-        document.querySelector('.overlay-item-title').textContent = item.querySelector('.menu-item-title').textContent;
-        
-        // Retrieve and use the original full text for the overlay description
-        const originalDescription = item.querySelector('.menu-item-description').getAttribute('data-original-text') || item.querySelector('.menu-item-description').textContent;
-        document.querySelector('.overlay-item-description').textContent = originalDescription;
+      // Populate overlay
+      document.querySelector('.overlay-item-title').textContent = item.querySelector('.menu-item-title').textContent;
+      
+      // Retrieve and use the original full text for the overlay description
+      const originalDescription = item.querySelector('.menu-item-description').getAttribute('data-original-text') || item.querySelector('.menu-item-description').textContent;
+      document.querySelector('.overlay-item-description').textContent = originalDescription;
 
-        document.querySelector('.overlay-item-price').textContent = item.querySelector('.menu-item-price').textContent;
-        
-        const imgSrc = item.querySelector('.menu-item-image img').src;
-        const overlayImage = document.querySelector('.overlay-item-image');
-        overlayImage.innerHTML = `<img src="${imgSrc}" alt="" style="width:100%;">`;
+      document.querySelector('.overlay-item-price').textContent = item.querySelector('.menu-item-price').textContent;
+      
+      const imgSrc = item.querySelector('.menu-item-image img').src;
+      const overlayImage = document.querySelector('.overlay-item-image');
+      overlayImage.innerHTML = `<img src="${imgSrc}" alt="" style="width:100%;">`;
 
-        // Show overlay
-        document.getElementById('menuOverlay').style.display = 'block';
+      // Show overlay
+      document.getElementById('menuOverlay').style.display = 'block';
     });
 });
 

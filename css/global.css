@@ -8,8 +8,17 @@
   box-sizing: border-box;
 }
 
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
@@ -29,7 +38,8 @@ body {
   margin-right: auto;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
@@ -40,47 +50,20 @@ h1 {
   margin-bottom: 32px;
   line-height: 1.2;
 }
-@media screen and (max-width: 1100px) {
-  h1 {
-    font-size: 40px;
-    margin-top: 24px;
-    margin-bottom: 24px;
-  }
-}
-@media screen and (max-width: 768px) {
-  h1 {
-    font-size: 32px;
-  }
-}
 
 h2 {
   font-size: 36px;
   font-weight: 500;
-}
-@media screen and (max-width: 768px) {
-  h2 {
-    font-size: 28px;
-  }
 }
 
 h3 {
   font-size: 24px;
   font-weight: 500;
 }
-@media screen and (max-width: 768px) {
-  h3 {
-    font-size: 20px;
-  }
-}
 
 h4 {
   font-size: 24px;
   font-weight: 400;
-}
-@media screen and (max-width: 768px) {
-  h4 {
-    font-size: 20px;
-  }
 }
 
 .subhead {
@@ -88,25 +71,21 @@ h4 {
   margin-top: 0px;
   margin-bottom: 32px;
 }
-@media screen and (max-width: 768px) {
-  .subhead {
-    margin-bottom: 24px;
-  }
-}
 
 a {
   text-decoration: none;
   color: black;
 }
 
-a[href^=tel], a[href^=sms] {
+a[href^=tel],
+a[href^=sms] {
   color: inherit;
   text-decoration: none;
 }
 
 .primary-button {
   display: inline-block;
-  background-color: #29831B;
+  background-color: #29831b;
   border-radius: 8px;
   padding: 10px 40px;
   border: none;
@@ -119,81 +98,41 @@ a[href^=tel], a[href^=sms] {
   max-width: 1500px;
   margin: 0 auto;
 }
-@media screen and (max-width: 1200px) {
-  .main-container {
-    width: 90%;
-  }
-}
 
 nav {
   display: flex;
   justify-content: space-between;
-  margin-top: 60px;
-  margin-bottom: 60px;
+  margin: 60px 0px;
   padding: 0px;
   align-items: center;
-}
-@media screen and (max-width: 800px) {
-  nav {
-    margin-top: 40px;
-    margin-bottom: 40px;
-  }
 }
 
 .logo-container img {
   max-width: 100%;
   height: auto;
 }
-@media screen and (max-width: 1200px) {
-  .logo-container img {
-    width: 200px;
-  }
-}
-@media screen and (max-width: 1000px) {
-  .logo-container img {
-    width: 180px;
-  }
-}
 
 .nav-links {
   display: flex;
   height: 24px;
 }
-@media screen and (max-width: 768px) {
-  .nav-links {
-    display: none;
-  }
-}
 
 .nav-link {
   margin: 0px 36px;
+  font-size: 18px;
   text-decoration: none;
   color: black;
   align-self: flex-end;
 }
+.nav-link a {
+  transition: color 0.3s ease;
+}
 .nav-link:hover a {
-  color: #29831B;
-}
-@media screen and (max-width: 1500px) {
-  .nav-link {
-    margin: 0px 20px;
-  }
-}
-@media screen and (max-width: 1200px) {
-  .nav-link {
-    font-size: 16px;
-    margin: 0px 16px;
-  }
-}
-@media screen and (max-width: 900px) {
-  .nav-link {
-    font-size: 16px;
-    margin: 0px 10px;
-  }
+  color: #29831b;
 }
 
 .active-link a {
-  color: #29831B;
+  color: #29831b;
   text-decoration: underline;
 }
 
@@ -201,16 +140,7 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: end;
-}
-@media screen and (max-width: 1200px) {
-  .nav-reservation-container {
-    font-size: 16px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .nav-reservation-container {
-    display: none;
-  }
+  font-size: 18px;
 }
 
 .nav-reservation-phone-container {
@@ -219,19 +149,9 @@ nav {
   font-weight: 600;
   align-items: center;
 }
-@media screen and (max-width: 1000px) {
-  .nav-reservation-phone-container {
-    font-size: 14px;
-  }
-}
 
 #phone-icon {
   margin-right: 8px;
-}
-@media screen and (max-width: 1000px) {
-  #phone-icon {
-    margin-right: 4px;
-  }
 }
 
 .mobile-menu-icon-container {
@@ -250,7 +170,7 @@ nav {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #E0ECE0;
+  background: #e0ece0;
   z-index: 1000;
   display: flex;
   flex-direction: column;
@@ -276,11 +196,6 @@ nav {
   color: black;
   cursor: pointer;
 }
-@media screen and (max-width: 600px) {
-  .close-mobile-menu-icon {
-    font-size: 24px;
-  }
-}
 
 .open-mobile-menu-icon {
   display: flex;
@@ -289,12 +204,6 @@ nav {
   left: 20px;
   top: 20px;
   z-index: 1100;
-}
-@media screen and (max-width: 600px) {
-  .open-mobile-menu-icon {
-    width: 24px;
-    height: auto;
-  }
 }
 
 .mobile-menu-nav {
@@ -335,7 +244,7 @@ nav {
 }
 
 footer {
-  background-color: #0E3606;
+  background-color: #0e3606;
   left: 0;
   right: 0;
   width: 100%;
@@ -359,47 +268,6 @@ footer {
   line-height: 1;
   padding: 10px 0px;
 }
-@media screen and (max-width: 768px) {
-  .footer-content h3 {
-    margin-top: 64px;
-  }
-}
-@media screen and (max-width: 1300px) {
-  .footer-content {
-    padding-top: 48px;
-  }
-}
-@media screen and (max-width: 1200px) {
-  .footer-content {
-    width: 90%;
-  }
-}
-@media screen and (max-width: 768px) {
-  .footer-content {
-    padding-top: 0px;
-    flex-direction: column;
-  }
-}
-
-@media screen and (max-width: 1300px) {
-  .footer-logo-container {
-    width: 100%;
-    margin: 60px 0px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .footer-logo-container {
-    margin-bottom: 0px;
-  }
-  .footer-logo-container a img {
-    width: 200px;
-  }
-}
-@media screen and (max-width: 500px) {
-  .footer-logo-container a img {
-    width: 170px;
-  }
-}
 
 .footer-item-container {
   display: flex;
@@ -410,11 +278,6 @@ footer {
   font-weight: 400px;
   margin-top: 20px;
   line-height: 1.5;
-}
-@media screen and (max-width: 768px) {
-  .footer-item-container {
-    font-size: 14px;
-  }
 }
 
 .footer-icon {
@@ -432,7 +295,119 @@ footer {
 .social-icon {
   margin-right: 16px;
 }
+
+@media screen and (max-width: 1500px) {
+  .nav-link {
+    margin: 0px 20px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .footer-content {
+    padding-top: 48px;
+  }
+  .footer-logo-container {
+    width: 100%;
+    margin: 60px 0px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .main-container {
+    width: 90%;
+  }
+  .logo-container img {
+    width: 200px;
+  }
+  .nav-link {
+    font-size: 16px;
+    margin: 0px 16px;
+  }
+  .nav-reservation-container {
+    font-size: 16px;
+  }
+  .footer-content {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 1100px) {
+  h1 {
+    font-size: 40px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .logo-container img {
+    width: 180px;
+  }
+  #phone-icon {
+    margin-right: 4px;
+  }
+  .nav-reservation-phone-container {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .nav-link {
+    margin: 0px 10px;
+  }
+}
+@media screen and (max-width: 800px) {
+  nav {
+    margin: 40px 0px;
+  }
+}
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 32px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  h4 {
+    font-size: 20px;
+  }
+  .subhead {
+    margin-bottom: 24px;
+  }
+  .nav-links {
+    display: none;
+  }
+  .nav-reservation-container {
+    display: none;
+  }
+  .footer-content {
+    flex-direction: column;
+    padding-top: 0px;
+  }
+  .footer-content h3 {
+    margin-top: 64px;
+  }
+  .footer-logo-container {
+    margin-bottom: 0px;
+  }
+  .footer-logo-container a img {
+    width: 200px;
+  }
+  .footer-item-container {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .close-mobile-menu-icon {
+    font-size: 24px;
+  }
+  .open-mobile-menu-icon {
+    width: 24px;
+    height: auto;
+  }
+}
 @media screen and (max-width: 500px) {
+  .footer-logo-container a img {
+    width: 180px;
+  }
   .social-icon {
     width: 32px;
     height: auto;

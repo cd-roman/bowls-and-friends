@@ -1,197 +1,204 @@
 .menu-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .menu-top-divider {
-    width: 100%;
-    margin: 12px 0px 0px;
-    border: 1px solid #595959;
-    opacity: 1;
+  width: 100%;
+  margin: 12px 0px 0px;
+  border: 1px solid #595959;
+  opacity: 1;
 }
 
-.accordion{
-    width: 92%;
---bs-accordion-btn-focus-box-shadow: none;
---bs-accordion-active-color: none;
---bs-accordion-active-bg: none;
-margin-bottom: 100px;
-
-    @media screen and (max-width: 600px){
-        width: 100%;        
-    }
+.accordion {
+  width: 92%;
+  --bs-accordion-btn-focus-box-shadow: none;
+  --bs-accordion-active-color: none;
+  --bs-accordion-active-bg: none;
+  margin-bottom: 100px;
 }
 
 .menu-bottom-divider {
-    display: none;
+  display: none;
 }
 
 .menu-item-container {
-    display: flex;
-    margin: 0px 25px;
-    align-items: center;
-    cursor: pointer;
-
-    @media screen and (max-width: 768px){
-        margin: 0px;
-        font-size: 16px;
-    }
-
-    @media screen and (max-width: 600px){
-        align-items: flex-end;
-    }
+  display: flex;
+  margin: 0px 25px;
+  align-items: center;
+  cursor: pointer;
 }
 
 .menu-item-wrapper {
-    width: 100%;
-    padding-right: 3rem;
-
-    @media screen and (max-width: 960px) {
-        padding-right: 2rem;
-    }
-
-    @media screen and (max-width: 600px) {
-        padding-right: 12px;
-    }
+  width: 100%;
+  padding-right: 3rem;
 }
 
 .menu-item {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    line-height: 1.2;
-
-    @media screen and (max-width: 960px) {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+  display: flex;
+  align-items: center;
+  width: 100%;
+  line-height: 1.2;
 }
 
 .menu-item-title {
-    font-weight: bold;
-    margin-bottom: 12px;
+  font-weight: bold;
+  margin-bottom: 12px;
 }
 
 .menu-item-price {
-    padding-right: 3rem;
-    font-weight: 500;
-    font-style: italic;
-    
-    @media screen and (max-width: 960px) {
-        padding-right: 0;
-        padding-top: 12px;
-    }
+  padding-right: 3rem;
+  font-weight: 500;
+  font-style: italic;
 }
 
 .menu-item-image {
-    display: flex;
-    width: 96px;
-    height: auto;
-    border-radius: 12px;
-    overflow: hidden;
+  display: flex;
+  width: 96px;
+  height: auto;
+  border-radius: 12px;
+  overflow: hidden;
 
-    img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
 
 .menu-overlay {
-    position: fixed; 
-    z-index: 10;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.5);
-    padding-bottom: 280px;
-
-    @media screen and (max-width: 600px){
-        padding-bottom: 360px;
-    }
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding-bottom: 280px;
 }
 
-
 .overlay-content {
-    position: relative;
-    top: 25%;
-    width: 80%;
-    max-width: 600px;
-    margin: auto;
-    padding: 20px;
-    background: white;
-    border-radius: 12px;
-    box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.25);
+  position: relative;
+  top: 25%;
+  width: 80%;
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.25);
 }
 
 .close-overlay {
-    position: absolute;
-    top: 40px;
-    right: 40px;
-    font-size: 24px;
-    cursor: pointer;
-
-    @media screen and (max-width: 600px){
-        top: 20px;
-        right: 20px; 
-        font-size: 18px;
-    }
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  font-size: 24px;
+  cursor: pointer;
 }
 
 .overlay-item-title {
-    margin: 48px 0px 32px;
-    text-align: center;
-
-    @media screen and (max-width: 600px){
-        margin-top: 32px;
-    }
+  margin: 48px 0px 32px;
+  text-align: center;
 }
 
 .overlay-item-image {
-    max-width: 300px;
-    border-radius: 12px;
-    margin-left: auto;
-    margin-right: auto;
-    overflow: hidden;
+  max-width: 300px;
+  border-radius: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
 
-    img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-    @media screen and (max-width: 768px){
-        max-width: 240px;
-    }
-
-    @media screen and (max-width: 600px){
-        max-width: 200px;
-    }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
 
 .overlay-item-description {
-    margin: 48px 48px 0px;
-    text-align: center;
-    line-height: 1.2;
-
-    @media screen and (max-width: 768px){
-        margin: 32px 20px 0px;
-        font-size: 16px;
-    }
+  margin: 48px 48px 0px;
+  text-align: center;
+  line-height: 1.2;
 }
 
 .overlay-item-price {
-    margin: 48px 0px 28px;
-    text-align: center;
-    font-weight: 500;
-    font-style: italic;
-
-    @media screen and (max-width: 768px){
-        margin-top: 32px;
-        font-size: 16px;
-    }
+  margin: 48px 0px 28px;
+  text-align: center;
+  font-weight: 500;
+  font-style: italic;
 }
 
+//--------------------------------------------
+//Responsive
+//--------------------------------------------
+
+@media screen and (max-width: 960px) {
+  .menu-item-wrapper {
+    padding-right: 32px;
+  }
+
+  .menu-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu-item-price {
+    padding: 12px 0px 0px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .menu-item-container {
+    margin: 0px;
+    font-size: 16px;
+  }
+
+  .overlay-item-image {
+    max-width: 240px;
+  }
+
+  .overlay-item-description {
+    margin: 32px 20px 0px;
+    font-size: 16px;
+  }
+
+  .overlay-item-price {
+    margin-top: 32px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .accordion {
+    width: 100%;
+  }
+
+  .menu-item-container {
+    align-items: flex-end;
+  }
+
+  .menu-item-wrapper {
+    padding-right: 12px;
+  }
+
+  .menu-overlay {
+    padding-bottom: 360px;
+  }
+
+  .close-overlay {
+    top: 20px;
+    right: 20px;
+    font-size: 18px;
+  }
+
+  .overlay-item-title {
+    margin-top: 32px;
+  }
+
+  .overlay-item-image {
+    max-width: 200px;
+  }
+}

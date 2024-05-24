@@ -4,25 +4,20 @@
 
 .feedback-container {
   flex: 1;
-  background-color: #E0ECE0;
+  background-color: #e0ece0;
 }
 
 .feedback-wrapper {
-  width: 80%;
+  width: 90%;
   max-width: 1500px;
   margin: 0 auto 80px;
-}
-@media screen and (max-width: 1200px) {
-  .feedback-wrapper {
-    width: 90%;
-  }
 }
 
 .feedback-form-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 40%;
+  width: 45%;
   height: auto;
   background-color: white;
   margin: 80px auto;
@@ -30,22 +25,6 @@
   box-shadow: 4px 4px 12px 0 rgba(0, 0, 0, 0.2);
   padding: 64px;
   text-align: center;
-}
-@media screen and (max-width: 1200px) {
-  .feedback-form-container {
-    width: 50%;
-  }
-}
-@media screen and (max-width: 768px) {
-  .feedback-form-container {
-    width: 65%;
-  }
-}
-@media screen and (max-width: 600px) {
-  .feedback-form-container {
-    width: 90%;
-    padding: 28px;
-  }
 }
 
 h2 {
@@ -55,11 +34,7 @@ h2 {
 .description {
   line-height: 1.2;
   margin-top: 24px;
-}
-@media screen and (max-width: 768px) {
-  .description {
-    font-size: 16px;
-  }
+  font-size: 1rem;
 }
 
 h3 {
@@ -77,14 +52,9 @@ h3 {
 
 .star {
   cursor: pointer;
-  color: #E0E0E0;
+  color: #e0e0e0;
   font-size: 32px;
   transition: color 0.2s;
-}
-@media screen and (max-width: 768px) {
-  .star {
-    font-size: 24px;
-  }
 }
 
 .star.hovered {
@@ -103,22 +73,13 @@ h3 {
 
 textarea {
   margin: 3rem 0px 0px;
-  border: 1px solid #BDBDBD;
+  border: 1px solid #bdbdbd;
   border-radius: 8px;
   line-height: 1.2;
   width: 100%;
   padding: 20px;
   resize: vertical;
-}
-@media screen and (max-width: 768px) {
-  textarea {
-    font-size: 16px;
-  }
-}
-@media screen and (max-width: 600px) {
-  textarea {
-    padding: 16px 12px;
-  }
+  font-size: 1rem;
 }
 
 textarea::placeholder {
@@ -136,22 +97,13 @@ h4 {
 
 input {
   margin: 20px 0px 0px;
-  border: 1px solid #BDBDBD;
+  border: 1px solid #bdbdbd;
   border-radius: 8px;
   width: 100%;
   line-height: 1.2;
   width: 100%;
   padding: 20px;
-}
-@media screen and (max-width: 768px) {
-  input {
-    font-size: 16px;
-  }
-}
-@media screen and (max-width: 600px) {
-  input {
-    padding: 16px 12px;
-  }
+  font-size: 1rem;
 }
 
 input::placeholder {
@@ -168,6 +120,32 @@ input:focus::placeholder {
 
 footer {
   margin-top: 0px;
+}
+
+@media screen and (max-width: 1300px) {
+  .feedback-form-container {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .feedback-form-container {
+    width: 65%;
+  }
+  .star {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .feedback-form-container {
+    width: 90%;
+    padding: 28px;
+  }
+  textarea {
+    padding: 16px 12px;
+  }
+  input {
+    padding: 16px 12px;
+  }
 }
 
 /*# sourceMappingURL=feedback.css.map */

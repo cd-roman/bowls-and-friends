@@ -26,10 +26,7 @@
   }
 }
 
-.reservation-container {
-  display: none;
-}
-
+.reservation-container,
 .reservation-phone-container {
   display: none;
 }
@@ -61,7 +58,7 @@
   }
 }
 
-#image-overlay {
+#overlay-container {
   position: fixed;
   top: 0;
   left: 0;
@@ -73,17 +70,17 @@
   justify-content: center;
   z-index: 1000;
   display: none;
+
+  img {
+    max-width: 90%;
+    max-height: 90%;
+    margin: auto;
+    border-radius: 12px;
+  }
 }
 
 .overlay-open {
   display: flex !important;
-}
-
-#image-overlay img {
-  max-width: 90%;
-  max-height: 90%;
-  margin: auto;
-  border-radius: 12px;
 }
 
 //--------------------------------------------

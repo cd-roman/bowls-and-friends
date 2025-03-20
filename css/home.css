@@ -3,13 +3,11 @@
   justify-content: space-between;
   align-items: center;
   padding-top: 48px;
-  width: 100%;
-}
+  width: 100%; }
 
 .hero-content {
   width: 30%;
-  margin-right: 120px;
-}
+  margin-right: 120px; }
 
 .hero-image {
   display: flex;
@@ -17,44 +15,37 @@
   height: 100%;
   width: auto;
   border-radius: 12px;
-  overflow: hidden;
-}
-.hero-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
+  overflow: hidden; }
+  .hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
 
 .reservation-container,
 .reservation-phone-container {
-  display: none;
-}
+  display: none; }
 
 .photo-gallery-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 100px;
-}
+  margin-top: 100px; }
 
 .photo-gallery {
   width: 100%;
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  margin-top: 64px;
-}
+  margin-top: 64px; }
 
 .photo-gallery-item {
   border-radius: 12px;
   cursor: pointer;
-  overflow: hidden;
-}
-.photo-gallery-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
+  overflow: hidden; }
+  .photo-gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
 
 #overlay-container {
   position: fixed;
@@ -67,58 +58,43 @@
   align-items: center;
   justify-content: center;
   z-index: 1000;
-  display: none;
-}
-#overlay-container img {
-  max-width: 90%;
-  max-height: 90%;
-  margin: auto;
-  border-radius: 12px;
-}
+  display: none; }
+  #overlay-container img {
+    max-width: 90%;
+    max-height: 90%;
+    margin: auto;
+    border-radius: 12px; }
 
 .overlay-open {
-  display: flex !important;
-}
+  display: flex !important; }
 
 @media screen and (max-width: 1780px) {
   .hero-content {
-    width: 40%;
-  }
-}
+    width: 40%; } }
 @media screen and (max-width: 1600px) {
   .hero-image img {
-    max-height: 460px;
-  }
-}
+    max-height: 460px; } }
 @media screen and (max-width: 1200px) {
   .hero-content {
     width: 50%;
-    margin-right: 100px;
-  }
-}
+    margin-right: 100px; } }
 @media screen and (max-width: 1000px) {
   .hero {
-    padding-top: 24px;
-  }
-}
+    padding-top: 24px; } }
 @media screen and (max-width: 900px) {
   .hero-content {
     width: 60%;
-    margin-right: 80px;
-  }
-}
+    margin-right: 80px; } }
 @media screen and (max-width: 850px) {
   .hero h1 {
-    font-size: 36px;
-  }
-}
+    font-size: 36px; } }
 @media screen and (max-width: 768px) {
   .hero {
     padding-top: 0px;
     flex-direction: column;
     align-items: center;
-    align-content: center;
-  }
+    align-content: center; }
+
   .hero-content {
     display: flex;
     justify-content: center;
@@ -127,41 +103,32 @@
     width: 100%;
     margin-right: 0px;
     margin-bottom: 48px;
-    text-align: center;
-  }
-  .hero-content .subhead {
-    font-size: 16px;
-  }
+    text-align: center; }
+
   .hero-image {
-    max-height: none;
-  }
+    max-height: none; }
+
   .reservation-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     font-size: 18px;
-    margin-top: 64px;
-  }
+    margin-top: 64px; }
+
   .reservation-phone-container {
     display: flex;
     padding-top: 12px;
     font-weight: 600;
-    align-items: center;
-  }
+    align-items: center; }
+
   .photo-gallery-container {
-    margin-top: 64px;
-  }
-}
+    margin-top: 64px; } }
 @media screen and (max-width: 600px) {
   .reservation-container {
-    font-size: 16px;
-  }
-}
+    font-size: 16px; } }
 @media screen and (max-width: 500px) {
   .photo-gallery {
     grid-template-columns: 1fr;
-    grid-row-gap: 25px;
-  }
-}
+    grid-row-gap: 25px; } }
 
 /*# sourceMappingURL=home.css.map */
